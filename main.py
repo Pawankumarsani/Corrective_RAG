@@ -1,4 +1,7 @@
 import os
+from bs4 import BeautifulSoup
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import FAISS
@@ -29,3 +32,4 @@ vectorestore = FAISS.from_documents(
 )
 
 retriever = vectorestore.as_retriever()
+

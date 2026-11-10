@@ -7,4 +7,5 @@ langchain-huggingface
 faiss-cpu
 sentence-transformers
 python-dotenv
-langchain-text-
+beautifulsoup4
+tiktoken
